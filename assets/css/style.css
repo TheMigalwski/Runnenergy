@@ -1,0 +1,234 @@
+/* ================================
+   RESET BÁSICO
+================================ */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  height: 100%;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+
+/* ================================
+   VARIÁVEIS
+================================ */
+:root{
+  --navy-900:#07122b;
+  --navy-850:#091a3a;
+  --navy-800:#0b1f45;
+  --text:#ffffff;
+  --line:rgba(255,255,255,.28);
+  --field-bg:#ffffff;
+  --field-text:#1b1f2a;
+}
+
+
+/* ================================
+   LAYOUT GERAL
+================================ */
+body{
+  background: var(--navy-900);
+  color: var(--text);
+}
+
+.page{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns: 1.6fr 1fr;
+}
+
+
+/* ================================
+   HERO (IMAGEM ESQUERDA)
+================================ */
+.hero{
+  background:
+    linear-gradient(rgba(7, 18, 43, 0.199), rgba(7, 18, 43, 0.5)),
+    linear-gradient(90deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,.15) 55%, rgba(0,0,0,0) 100%),
+    url("../img/hero.jpg") center 70%/cover no-repeat;
+}
+
+
+/* ================================
+   PAINEL DIREITO
+================================ */
+.panel{
+  background: linear-gradient(180deg, var(--navy-850) 0%, var(--navy-900) 100%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:48px 28px;
+}
+
+.card{
+  width:min(420px, 100%);
+  text-align:center;
+}
+
+.brand{
+  margin-bottom:26px;
+}
+
+.brand img{
+  width:450px;
+  height:auto;
+}
+
+
+/* ================================
+   FORM
+================================ */
+.field{
+  text-align:left;
+  margin: 0 auto 18px;
+  width: min(360px, 100%);
+}
+
+.label{
+  font-size:14px;
+  margin-bottom:8px;
+}
+
+.input{
+  width:100%;
+  border:0;
+  outline:none;
+  background: var(--field-bg);
+  color: var(--field-text);
+  border-radius: 999px;
+  height:46px;
+  padding: 0 18px;
+  font-size:16px;
+}
+
+.input::placeholder{
+  color: rgba(27,31,42,.58);
+}
+
+/* ================================
+   LOGIN BUTTON
+================================ */
+.login-btn{
+  width:min(360px, 100%);
+  height:46px;
+  margin: 4px auto 0;
+  border:0;
+  border-radius:999px;
+  background:#549C0E;
+  color:#ffffff;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  transition: filter .15s ease, transform .15s ease;
+}
+
+.login-btn:hover{
+  filter: brightness(1.05);
+}
+
+.login-btn:active{
+  transform: scale(.99);
+}
+
+
+/* ================================
+   DIVIDER
+================================ */
+.divider{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  width:min(360px, 100%);
+  margin: 22px auto 18px;
+  font-size:16px;
+}
+
+.divider::before,
+.divider::after{
+  content:"";
+  height:2px;
+  flex:1;
+  background: var(--line);
+  border-radius:999px;
+}
+
+
+/* ================================
+   OAUTH BUTTONS
+================================ */
+.oauth{
+  width:min(360px, 100%);
+  margin: 0 auto 18px;
+  display:flex;
+  gap:22px;
+  justify-content:center;
+}
+
+.oauth-btn{
+  width:72px;
+  height:64px;
+  border-radius:14px;
+  border:0;
+  cursor:pointer;
+  display:grid;
+  place-items:center;
+  transition: transform .15s ease;
+}
+
+.oauth-btn:active{
+  transform: scale(.98);
+}
+
+.oauth-btn.apple{
+  background:#0b0b0b;
+}
+
+.oauth-btn.google{
+  background:#ffffff;
+}
+
+.oauth-btn svg{
+  width:30px;
+  height:30px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+.footer{
+  width:min(360px, 100%);
+  margin: 10px auto 0;
+  font-size:16px;
+  display:flex;
+  justify-content:center;
+  gap:10px;
+}
+
+.footer a{
+  color:#ffffff;
+  text-decoration: underline;
+  font-weight:700;
+}
+
+
+/* ================================
+   RESPONSIVO
+================================ */
+@media (max-width: 980px){
+  .page{
+    grid-template-columns: 1fr;
+  }
+
+  .hero{
+    min-height: 40vh;
+  }
+
+  .panel{
+    min-height: 60vh;
+  }
+}
