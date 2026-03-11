@@ -472,3 +472,7 @@ img {
     padding: 40px 20px 0;
   }
 }
+
+.hidden {
+  display: none;
+}
