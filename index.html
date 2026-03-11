@@ -1,88 +1,117 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>RUNNENERGY — Login</title>
-
-  <!-- CSS externo -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Runnenergy</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+<body class="home-body">
+  <header class="home-header">
+    <div class="home-logo" aria-label="Logo da Runnenergy">
+      <img src="./assets/img/logoRunnenergy.png" alt="Logo Runnenergy" />
+    </div>
 
-<body>
-  <main class="page">
-    <section class="hero" aria-label="Imagem de capa"></section>
+    <nav class="home-nav" aria-label="Navegacao principal">
+      <a href="#">Inicio</a>
+      <a href="#">Profissionais</a>
+      <a href="#">Provas</a>
+    </nav>
 
-    <section class="panel" aria-label="Área de login">
-      <div class="card">
-        <header class="brand">
-          <!-- Troque pelo seu logo -->
-          <img
-            src="./assets/img/logoRunnenergy.png"
-            alt="RUNNENERGY"
-          />
-        </header>
+    <div class="home-actions">
+      <label class="search-box" aria-label="Buscar">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" />
+          <path d="M20 20L16.65 16.65" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <input type="search" placeholder="Buscar" />
+      </label>
 
-        <form autocomplete="on">
-          <div class="field">
-            <p class="label">Email</p>
-            <input
-              class="input"
-              type="email"
-              name="email"
-              placeholder="corredor@runnenergy.com"
-            />
-          </div>
+      <a href="./pages/login.html" class="login-link">Login</a>
+    </div>
+  </header>
 
-          <div class="field">
-            <p class="label">Senha</p>
-            <input
-              class="input"
-              type="password"
-              name="password"
-              placeholder="Sua senha"
-            />
-          </div>
+  <main class="home-main">
+    <section class="hero-section">
+      <div class="hero-image-frame">
+        <img src="./assets/img/hero.jpg" alt="Pessoa correndo na praia" />
+      </div>
 
-          <button class="login-btn" type="submit">Login</button>
+      <div class="hero-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+          qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
 
-          <div class="divider">Logar com</div>
+      <div class="store-buttons" aria-label="Links para aplicativos">
+        <a href="#" class="store-badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path fill="currentColor" d="M42.2 33.8c0-5.9 4.8-8.7 5-8.8-2.7-3.9-6.9-4.4-8.4-4.5-3.5-.4-6.9 2.1-8.7 2.1-1.9 0-4.8-2-7.9-1.9-4 .1-7.8 2.4-9.9 6-4.3 7.4-1.1 18.3 3.1 24.4 2.1 3 4.5 6.3 7.7 6.2 3.1-.1 4.3-2 8.1-2 3.8 0 4.8 2 8.1 1.9 3.4-.1 5.5-3 7.5-6 2.4-3.5 3.4-6.9 3.5-7.1-.1 0-6.7-2.6-6.7-10.3Z" />
+            <path fill="currentColor" d="M38.1 13.2c1.7-2 2.8-4.7 2.5-7.5-2.5.1-5.5 1.7-7.2 3.7-1.5 1.8-2.9 4.6-2.5 7.3 2.8.2 5.5-1.4 7.2-3.5Z" />
+          </svg>
+          <span>Download on the</span>
+          <strong>App Store</strong>
+        </a>
 
-          <div class="oauth" role="group" aria-label="Login social">
-            <button
-              class="oauth-btn apple"
-              type="button"
-              aria-label="Entrar com Apple"
-            >
-              <!-- Apple SVG -->
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M16.75 2.2c-.83.06-1.8.55-2.37 1.23-.53.62-1 1.55-.84 2.45.9.07 1.84-.46 2.4-1.14.56-.67.98-1.58.81-2.54Z" fill="#fff"/>
-                <path d="M20.08 17.03c-.45 1.04-.66 1.5-1.24 2.42-.82 1.28-1.97 2.88-3.39 2.9-1.26.02-1.58-.82-3.3-.81-1.72.01-2.08.83-3.35.8-1.42-.02-2.5-1.47-3.32-2.75-2.3-3.58-2.54-7.78-1.12-10.01 1.01-1.6 2.62-2.54 4.12-2.54 1.53 0 2.5.84 3.77.84 1.23 0 1.98-.85 3.76-.85 1.33 0 2.74.73 3.75 1.99-3.3 1.81-2.77 6.55.32 8.01Z" fill="#fff"/>
-              </svg>
-            </button>
-
-            <button
-              class="oauth-btn google"
-              type="button"
-              aria-label="Entrar com Google"
-            >
-              <!-- Google SVG -->
-              <svg viewBox="0 0 48 48">
-                <path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303C33.659 32.655 29.225 36 24 36c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.957 3.043l5.657-5.657C34.051 6.053 29.241 4 24 4 12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20c0-1.341-.138-2.65-.389-3.917Z"/>
-                <path fill="#FF3D00" d="M6.306 14.691 12.88 19.51C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.957 3.043l5.657-5.657C34.051 6.053 29.241 4 24 4c-7.682 0-14.35 4.327-17.694 10.691Z"/>
-                <path fill="#4CAF50" d="M24 44c5.122 0 9.834-1.966 13.358-5.164l-6.173-5.223C29.146 35.091 26.742 36 24 36c-5.204 0-9.624-3.317-11.283-7.946l-6.52 5.02C9.49 39.556 16.227 44 24 44Z"/>
-                <path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303a12.06 12.06 0 0 1-4.118 5.613h.002l6.173 5.223C36.934 39.243 44 34 44 24c0-1.341-.138-2.65-.389-3.917Z"/>
-              </svg>
-            </button>
-          </div>
-
-          <div class="footer">
-            <span>Não tem conta?</span>
-            <a href="#">Criar Conta</a>
-          </div>
-        </form>
+        <a href="#" class="store-badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path fill="#32A852" d="M12 10.9 37.8 32 12 53.1c-1.4-1.1-2.3-2.9-2.3-5V16c0-2.1.9-3.9 2.3-5.1Z" />
+            <path fill="#00A0F1" d="M37.8 32 46.2 25.1l10.7 6.1c2.8 1.6 2.8 4 0 5.6l-10.7 6.1L37.8 32Z" />
+            <path fill="#FFB900" d="M12 10.9 46.2 25.1 37.8 32 12 10.9Z" />
+            <path fill="#F4511E" d="M12 53.1 37.8 32 46.2 38.9 12 53.1Z" />
+          </svg>
+          <span>Get it on</span>
+          <strong>Google Play</strong>
+        </a>
       </div>
     </section>
   </main>
+
+  <footer class="home-footer">
+    <div class="footer-separator" aria-hidden="true"></div>
+
+    <div class="footer-content">
+      <div class="footer-column">
+        <h2>Runnenergy</h2>
+        <a href="#">Site institucional</a>
+        <a href="#">Fale conosco</a>
+        <a href="#">Conta e seguranca</a>
+        <a href="#">Profissionais</a>
+      </div>
+
+      <div class="footer-column">
+        <h2>Descubra</h2>
+        <a href="#">Cadastre-se</a>
+        <a href="#">Provas</a>
+      </div>
+
+      <div class="footer-column social-column">
+        <h2>Social</h2>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5h1.7V4.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.4V11H8v3h2.6v8h2.9Z" fill="currentColor" />
+            </svg>
+          </a>
+          <a href="#" aria-label="X">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 4h3.6l5 6.7L18.2 4H20l-6.6 7.8L20.6 20H17l-5.3-7.1L5.7 20H4l7-8.3L4 4Z" fill="currentColor" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2" />
+              <circle cx="12" cy="12" r="4.25" fill="none" stroke="currentColor" stroke-width="2" />
+              <circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
