@@ -144,7 +144,7 @@ img {
 }
 
 .store-badge {
-  min-width: 258px;
+  min-width: 200px;
   min-height: 106px;
   padding: 20px 24px;
   border-radius: 16px;
@@ -244,12 +244,21 @@ img {
 .hero {
   background:
     linear-gradient(rgba(7, 18, 43, 0.199), rgba(7, 18, 43, 0.5)),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.15) 55%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0.15) 55%,
+      rgba(0, 0, 0, 0) 100%
+    ),
     url("../img/hero.jpg") center 70% / cover no-repeat;
 }
 
 .panel {
-  background: linear-gradient(180deg, var(--login-navy-850) 0%, var(--login-navy-900) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--login-navy-850) 0%,
+    var(--login-navy-900) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -308,7 +317,9 @@ img {
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
-  transition: filter 0.15s ease, transform 0.15s ease;
+  transition:
+    filter 0.15s ease,
+    transform 0.15s ease;
 }
 
 .login-btn:hover {
