@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import style from "@/app/page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   const images = [
@@ -23,20 +24,26 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={style.card}>
-      <div
-        className={style.slider}
-        style={{ transform: `translateX(-${index * 100}%)` }}
-      >
-        {images.map((img, i) => (
-          <img
-            key={i}
-            src={img}
-            alt={`Card ${i + 1}`}
-            className={style.cardImage}
-          />
-        ))}
+    <>
+      <div className={style.card}>
+        <div
+          className={style.slider}
+          style={{ transform: `translateX(-${index * 100}%)` }}
+        >
+          {images.map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              alt={`Card ${i + 1}`}
+              className={style.cardImage}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+
+      <nav className={style.professionals}>
+        <Link href="/profissionais">Profissionais</Link>
+      </nav>
+    </>
   );
 }
