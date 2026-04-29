@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import style from "@/app/page.module.css";
 import Link from "next/link";
+import Profissionais from "./profissionais/page";
 
 export default function Home() {
   const images = [
@@ -43,6 +44,7 @@ export default function Home() {
 
       <nav className={style.professionals}>
         <Link href="/profissionais">Profissionais</Link>
+        <Profissionais />
       </nav>
     </>
   );
