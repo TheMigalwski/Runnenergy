@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import style from "@/app/page.module.css";
 import Link from "next/link";
 import Profissionais from "./profissionais/page";
+import Mapas from "./mapas/page";
 
 export default function Home() {
   const images = [
@@ -42,10 +43,16 @@ export default function Home() {
         </div>
       </div>
 
-      <nav className={style.professionals}>
-        <Link href="/profissionais">Profissionais</Link>
+      <section className={style.main}>
+        <Link href="/profissionais" className={style.professionals}>
+          Profissionais
+        </Link>
         <Profissionais />
-      </nav>
+        <Link href="/mapas" className={style.maps}>
+          Mapas
+        </Link>
+        <Mapas />
+      </section>
     </>
   );
 }

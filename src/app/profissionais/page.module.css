@@ -4,14 +4,6 @@
   gap: 20px;
   margin: 20px;
 }
-/* 
-.list h2 {
-  /* padding: 10px;
-} */
-
-.list h3 {
-  color: var(--detail-color);
-}
 
 .list p {
   color: var(--primary-white);

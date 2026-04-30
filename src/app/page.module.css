@@ -18,18 +18,32 @@
   object-position: left;
 }
 
+.main {
+  margin-top: 20px;
+}
+
 .professionals {
   font-size: 35px;
   padding-left: 20px;
   margin-top: 35px;
   font-style: oblique;
-}
-
-.professionals a {
   text-decoration: none;
   color: var(--secondary-blue);
 }
 
-.professionals a:hover {
+.professionals:hover {
+  color: var(--primary-green);
+}
+
+.maps {
+  font-size: 35px;
+  padding-left: 20px;
+  margin-top: 35px;
+  font-style: oblique;
+  text-decoration: none;
+  color: var(--secondary-blue);
+}
+
+.maps:hover {
   color: var(--primary-green);
 }
