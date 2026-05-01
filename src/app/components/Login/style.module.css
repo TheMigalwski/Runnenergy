@@ -1,0 +1,74 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 360px;
+  padding: 32px;
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--primary-blue);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  color: var(--primary-green);
+  background: rgba(192, 192, 192, 0.25);
+}
+
+.logo {
+  height: 200px;
+  width: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form input {
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid #c0c0c0;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.form button {
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  background: var(--secondary-blue);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form ::placeholder {
+  color: var(--detail-color);
+  font-size: 15px;
+}
