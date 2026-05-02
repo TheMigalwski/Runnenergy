@@ -40,7 +40,7 @@ export default function Login({ onClose }) {
         <h1>Entrar</h1>
 
         <form className={style.form}>
-          <input type="email" placeholder="E-mail" />
+          <input type="email" placeholder="E-mail/Username" />
 
           <input type="password" placeholder="Senha" />
 

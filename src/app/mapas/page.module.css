@@ -1,0 +1,38 @@
+.mapas {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 28px;
+}
+
+.mapCard {
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
+  flex: 0 0 auto;
+}
+
+.profissionais {
+  min-height: 400px;
+  flex: 1;
+}
+
+@media (max-width: 800px) {
+  .mapas {
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  .mapCard {
+    width: 100%;
+    height: auto;
+  }
+
+  .profissionais {
+    width: 100%;
+    min-height: auto;
+  }
+}

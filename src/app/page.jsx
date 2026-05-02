@@ -44,14 +44,14 @@ export default function Home() {
       </div>
 
       <section className={style.main}>
-        <Link href="/profissionais" className={style.professionals}>
-          Profissionais
-        </Link>
-        <Profissionais />
         <Link href="/mapas" className={style.maps}>
           Mapas
         </Link>
         <Mapas />
+        <Link href="/profissionais" className={style.professionals}>
+          Profissionais
+        </Link>
+        <Profissionais />
       </section>
     </>
   );
